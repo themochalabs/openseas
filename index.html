@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Seas Marina</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: #e8fdf5;
+      color: #023047;
+      line-height: 1.6;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    header {
+      background: linear-gradient(to right, #00a896, #028090);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    .logo {
+      max-width: 300px;
+      height: auto;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #e7e7e7;
+    }
+
+    .cta-buttons {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .visit-btn-rezzone,
+    .visit-btn-rental {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 1rem 3rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .visit-btn-rezzone {
+      background: #ff6b6b;
+    }
+
+    .visit-btn-rental {
+      background: #44c46a;
+    }
+
+    .visit-btn:hover {
+      background: #e63946;
+    }
+
+    .content-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .gallery {
+      margin: 3rem 0;
+    }
+
+    .gallery h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #007f7f;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .image-wrapper {
+      position: relative;
+      height: 500px;
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-wrapper img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gradient-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.05));
+      pointer-events: none;
+    }
+
+    .about {
+      margin: 3rem 0;
+      padding: 1.5rem;
+      background: #ffffffd1;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .about h2 {
+      text-align: center;
+      color: #028090;
+      margin-bottom: 1rem;
+    }
+
+    .marina-text {
+      font-family: "La Belle Aurore", cursive;
+      font-size: 3rem;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .about p {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+      color: #023047;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #d8d8d8;
+      background: linear-gradient(to right, #00a896, #028090);
+    }
+
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00a896;
+      color: white;
+      padding: 0.5rem 20px;
+      border-radius: 50px;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+      transition: background 0.3s ease;
+    }
+
+    .chat-button:hover {
+      background-color: #028090;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-cut.png" alt="Open Seas Marina Logo" class="logo" />
+    <p>Your Second Life getaway to OPEN Seas!</p>
+  </header>
+
+  <main>
+    <div class="content-container">
+      <section class="gallery">
+        <div class="image-grid">
+          <div class="image-wrapper">
+            <img src="hero-image.png" alt="Marina View" />
+            <div class="gradient-overlay"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-buttons">
+        <a href="http://maps.secondlife.com/secondlife/Solang/211/193/23" class="visit-btn-rezzone" target="_blank">FREE REZ ZONE - TELEPORT!</a>
+      </section> 
+
+      <section class="cta-buttons">
+        <a href="http://maps.secondlife.com/secondlife/Solang/220/191/23" class="visit-btn-rental" target="_blank">RENTAL DOCKS - TELEPORT!</a>
+      </section>
+
+      <section class="about">
+        <h2>About OPEN SEAS <span class="marina-text">Marina</span></h2>
+        <p>
+          Open Seas Marina is your relaxing slice of paradise in Second Life, where
+          fun meets the waves! Dock your boat, enjoy scenic views, or just hang out with
+          friends under the sun. Whether you're an experienced sailor or a land-lover looking
+          to unwind, our marina offers a welcoming community, cozy slips, and plenty of
+          space to enjoy SL's open waters.
+        </p>
+        <p>
+          We host regular boating events, casual socials, and seasonal parties—all with
+          that breezy, open-seas spirit. Come anchor with us and make Open Seas Marina your
+          home port!
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Open Seas Marina - All rights reserved.</p>
+  </footer>
+
+  <a href="secondlife:///app/group/1751bbb6-caa6-6f47-83d1-9024c224f48a/about" class="chat-button" target="_blank">Join Group!</a>
+</body>
+</html>
